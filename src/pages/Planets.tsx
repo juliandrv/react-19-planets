@@ -16,15 +16,15 @@ const Planets: FC = () => {
   }, []);
 
   return (
-    <div className="p-4">
-      <h1 className="text-2xl font-bold mb-4">Planetas del Sistema Solar</h1>
-
+    <>
+      <h4 className="text-2xl font-thin mb-4">Agregar y mantener planetas</h4>
+      <hr className="border-gray-300 mb-4" />
       {/* Formulario para agregar un planeta */}
       <EditPlanetForm />
 
       {/* Lista de planetas Grid*/}
       {isLoading ? <p>Cargando...</p> : <PlanetList planets={planets} />}
-    </div>
+    </>
   );
 };
 
