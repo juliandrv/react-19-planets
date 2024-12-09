@@ -17,7 +17,7 @@ const Planets: FC = () => {
   useEffect(() => {
     getPlanets()
       .then((res) => {
-        setPlanets(res.data);
+        setPlanets(res);
         setIsLoading(false);
       })
       .catch((error) => {
