@@ -15,12 +15,16 @@ const Planets: FC = () => {
     });
   }, []);
 
+  const handleAddPlanet = (planet: Partial<Planet>) => {
+    console.log(planet);
+  };
+
   return (
     <>
       <h4 className="text-2xl font-thin mb-4">Agregar y mantener planetas</h4>
       <hr className="border-gray-300 mb-4" />
       {/* Formulario para agregar un planeta */}
-      <EditPlanetForm />
+      <EditPlanetForm onAddPlanet={handleAddPlanet} />
 
       {/* Lista de planetas Grid*/}
       {isLoading ? <p>Cargando...</p> : <PlanetList planets={planets} />}
