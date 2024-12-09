@@ -4,14 +4,18 @@ import { Planet } from '../interfaces/planet.interface';
 import { EditPlanetForm } from './ui/EditPlanetForm';
 import { PlanetList } from './ui/PlanetList';
 
+const getPlanets = async () => {
+  const res = await planetsApi.get('/');
+  return res.data;
+};
+
 const Planets: FC = () => {
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
   const [planets, setPlanets] = useState<Planet[]>([]);
 
   useEffect(() => {
-    planetsApi
-      .get('/')
+    getPlanets()
       .then((res) => {
         setPlanets(res.data);
         setIsLoading(false);
