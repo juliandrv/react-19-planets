@@ -2,33 +2,63 @@
   "planets": [
     {
       "id": "a1b2c3",
-      "name": "Mercurio",
+      "name": "MERCURIO",
       "type": "Planeta",
       "distanceFromSun": "57.91 millones de km"
     },
     {
       "id": "d4e5f6",
-      "name": "Venus",
+      "name": "VENUS",
       "type": "Planeta",
       "distanceFromSun": "108.2 millones de km"
     },
     {
       "id": "g7h8i9",
-      "name": "Tierra",
+      "name": "TIERRA",
       "type": "Planeta",
       "distanceFromSun": "149.6 millones de km"
     },
     {
       "id": "j0k1l2",
-      "name": "Marte",
+      "name": "MARTE",
       "type": "Planeta",
       "distanceFromSun": "227.9 millones de km"
     },
     {
       "id": "m3n4o5",
-      "name": "Júpiter",
+      "name": "JÚPITER",
       "type": "Planeta",
       "distanceFromSun": "778.5 millones de km"
+    },
+    {
+      "id": "5fd1",
+      "name": "URANO",
+      "type": "Planeta",
+      "distanceFromSun": "850 millones de km"
+    },
+    {
+      "id": "e28b",
+      "name": "ASDASDAS",
+      "type": "asdasdasd",
+      "distanceFromSun": "asdasdasd"
+    },
+    {
+      "id": "4fc0",
+      "name": "ASDASDAS",
+      "type": "asdasd",
+      "distanceFromSun": "asdasd"
+    },
+    {
+      "id": "e4dc",
+      "name": "FDFSDFSDF",
+      "type": "sdfsdfsdf",
+      "distanceFromSun": "sdfsdfsdfsdf"
+    },
+    {
+      "id": "ca34",
+      "name": "FDSDFSDF",
+      "type": "sdfsdf",
+      "distanceFromSun": "sdfsdfsdf"
     }
   ]
 }

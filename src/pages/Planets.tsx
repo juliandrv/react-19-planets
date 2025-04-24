@@ -1,4 +1,4 @@
-import { FC, use } from 'react';
+import { FC, use, useState } from 'react';
 
 import { Planet } from '../interfaces/planet.interface';
 import { EditPlanetForm } from './ui/EditPlanetForm';
@@ -9,10 +9,11 @@ interface Props {
 }
 
 const Planets: FC<Props> = ({ getPlanets }) => {
-  const planets = use(getPlanets);
+  const originalPlanets = use(getPlanets);
+  const [planets, setPlanets] = useState(originalPlanets);
 
-  const handleAddPlanet = (planet: Partial<Planet>) => {
-    console.log(planet);
+  const handleAddPlanet = async (planet: Planet) => {
+    setPlanets([...planets, planet]);
   };
 
   return (
